@@ -8,18 +8,57 @@
   <title>APPERT dev</title>
 </head>
 <body>
+<!-------- Page Loader ------->
+<div class="page-loader">
+  
+</div>
+
+<!--------  Background Circles start ------->
+<div class="bg-circles">
+  <div class="circle-1"></div>
+  <div class="circle-2"></div>
+  <div class="circle-3"></div>
+  <div class="circle-4"></div>
+</div>
+
+<!--------  overlay ------->
+  <div class="overlay"></div>
+
 <!--------  Main ------->
 <div class="main">
+                <!--------  Header Start ------->
+<header class="header">
+  <div class="container">
+    <div class="row flex-end">
+      <button type="button" class="nav-toggler">
+        <span></span>
+      </button>
+      <nav class="nav">
+        <div class="nav-inner">
+          <ul>
+            <li><a href="#home" class="nav-item link-item">Home</a></li>
+            <li><a href="#about" class="nav-item link-item">About</a></li>
+            <li><a href="#portfolio" class="nav-item link-item">Portfolio</a></li>
+            <li><a href="#contact" class="nav-item link-item">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+
                 <!--------  Home section ------->
-  <section class="home-section align-items-center hidden">
+  <section class="home-section align-items-center active" id="home">
     <div class="container">
       <div class="row align-items-center">
         <div class="home-text">
           <p>Hi, I'm</p>
           <h1>Roland APPERT</h1>
           <h2>Full-Stack developer</h2>
-          <a href="#" class="btn">more about me</a>
-          <a href="#" class="btn">potfolio</a>
+          <a href="#about" class="btn link-item">more about me</a>
+          <a href="#portfolio" class="btn link-item">portfolio</a>
         </div>
         <div class="home-img">
           <div class="img-box">
@@ -30,7 +69,7 @@
     </div>
   </section>
                   <!--------  About section ------->
-<section class="about-section sec-padding">
+<section class="about-section sec-padding " id="about">
   <div class="container">
     <div class="row">
       <div class="section-title">
@@ -112,15 +151,15 @@
               </div>
             </div>
           </div>
-          <a href="#" class="btn">download cv</a>
-          <a href="#" class="btn">contact me</a>
+          <a href="cv.pdf" target="_blank" class="btn">download cv</a>
+          <a href="#contact" class="btn link-item">contact me</a>
       </div>
     </div>
   </div>
 </section>
 
                   <!--------  Portfolio section ------->
-<section class="portfolio-section sec-padding hidden">
+<section class="portfolio-section sec-padding" id="portfolio">
   <div class="container">
     <div class="row">
       <div class="section-title">
@@ -264,7 +303,7 @@
 </section>
 
                   <!--------  Contact section ------->
-<Section class="contact-section sec-padding">
+<Section class="contact-section sec-padding" id="contact">
   <div class="container">
     <div class="row">
       <div class="section-title">
