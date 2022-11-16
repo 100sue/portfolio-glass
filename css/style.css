@@ -4,12 +4,12 @@
 
 /* -------- Variables -------*/
 :root {
-    --main-color: #e02f6b;
-    --blue: #0000ff;
+    --main-color: #1c11c0;
+    --blue: #f0157b;
     --blue-dark: #18293c;
     --orange: #ffa500;
     --green-yellow: #cddc39;
-    --pink-light: #efa2b4;
+    --pink-light: #359cf0;
     --cyan-light: #aef1ee;
     --white: #ffff;
     --white-alpha-40: rgba(255, 255, 255, 0.40);
@@ -244,6 +244,15 @@ button {
         transform: translateY(0px);
     }
 }
+@keyframes bounceTop2 {
+    0%,100% {
+        transform: translateY(-290px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+}
+
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -252,6 +261,7 @@ button {
         transform: rotate(360deg);
     }
 }
+
 /* -------- Background-circles -------*/
 .bg-circles {
     position: fixed;
@@ -288,9 +298,10 @@ button {
     height: 120px;
     width: 120px;
     background-color: var(--white);
-    top: 40%;
+    top: 70%;
     right: -60px;
     opacity: 0.6;
+    animation: bounceTop2 6s ease-in-out infinite;
 }
 .bg-circles .circle-4 {
     height: 50px;
@@ -299,6 +310,7 @@ button {
     left: -30px;
     top: 80%;
     opacity: 0.6;
+    
 }
 
 
