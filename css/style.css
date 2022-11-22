@@ -547,6 +547,8 @@ button {
 
 .home-text p {
     font-size: 18px;
+    font-weight: 600;
+    color: var(--main-color);
 }
 
 .home-text h1 {
@@ -557,7 +559,8 @@ button {
 .home-text h2 {
     font-size: 20px;
     text-transform: capitalize;
-    font-weight: 300;
+    font-weight: 600;
+    color: var(--main-color);
     margin: 0 0 30px;
 }
 
