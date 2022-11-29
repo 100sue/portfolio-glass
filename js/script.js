@@ -8,7 +8,6 @@ window.addEventListener("load", () => {
 
 })
 
-
 /*---------- Toggle Navbar ---------*/
 
 const navToggler = document.querySelector(".nav-toggler");
@@ -23,6 +22,8 @@ function hideSection() {
 function toggleNavbar() {
     document.querySelector(".header").classList.toggle("active");
 }
+
+
 
 /*---------- Active section ---------*/
 document.addEventListener("click", (e) => {
@@ -75,11 +76,13 @@ document.addEventListener("click", (e) => {
         portfolioItemDetails(e.target.parentElement);
     }
 })
+
 function togglePortfolioPopup() {
     document.querySelector(".portfolio-popup").classList.toggle("open");
     document.body.classList.toggle("hide-scrolling");
     document.querySelector(".main").classList.toggle("fade-out");
 }
+
 document.querySelector(".pp-close").addEventListener("click", togglePortfolioPopup);
 
 
@@ -94,11 +97,9 @@ document.addEventListener("click", (e) => {
 
 function portfolioItemDetails(portfolioItem) {
     document.querySelector(".pp-thumbnail img").src =
-    portfolioItem.querySelector(".portfolio-item-thumbnail").src;
-
+    portfolioItem.querySelector(".portfolio-item-thumbnail img").src;
     document.querySelector(".pp-header h3").innerHTML =
     portfolioItem.querySelector(".portfolio-item-title").innerHTML;
-
     document.querySelector(".pp-body").innerHTML =
     portfolioItem.querySelector(".portfolio-item-details").innerHTML;
 
